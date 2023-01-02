@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-VERSION = '0.0.1'
+VERSION = '0.0.3'
 DESCRIPTION = 'Friends Show Related API'
 LONG_DESCRIPTION = 'A package that allows to get details about friends show'
 
@@ -9,11 +9,11 @@ setup(
     name="friendspy",
     version=VERSION,
     author="Ashutosh Sharma",
-    author_email="email2ashusharma@gmail.com>",
+    author_email="email2ashusharma@gmail.com",
     description=DESCRIPTION,
     long_description_content_type="text/markdown",
     long_description=LONG_DESCRIPTION,
-    packages=find_packages(),
+    packages = ['friendspy.quotes'], # this must be the same as the name above
     install_requires=[],
     keywords=['python', 'friends', 'entertainment', 'fun'],
     classifiers=[
